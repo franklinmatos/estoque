@@ -1,0 +1,30 @@
+/* Estilizando o contêiner do componente */
+.version-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Estilizando o componente de versão */
+.version {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.spinner {
+  position: absolute;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form {
+  /* Estilos do seu formulário */
+  margin-bottom: 20px; /* Espaço entre o formulário e o spinner */
+}

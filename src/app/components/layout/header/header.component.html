@@ -1,0 +1,55 @@
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="drawer.toggle()" class="example-icon logo">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <span>{{titulo}}</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon favorite-icon">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-drawer-container >
+    <mat-drawer #drawer opened="false" mode="over" position="start">
+         <mat-nav-list>
+          <mat-list-item >
+              <mat-icon class="icon-spacer"  aria-hidden="false">home</mat-icon>Dashboard
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon class="icon-spacer">contact_phone</mat-icon>Fornecedores
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon class="icon-spacer">sell</mat-icon>Produtos
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon class="icon-spacer">shopping_bag</mat-icon>Vendas
+          </mat-list-item>
+          <mat-list-item routerLink="/cliente">
+            <mat-icon class="icon-spacer">group</mat-icon>Clientes
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon class="icon-spacer">person_add</mat-icon>Usuários
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon class="icon-spacer">trending_up</mat-icon>Indicadores
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon class="icon-spacer">analytics</mat-icon>Relatórios
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon class="icon-spacer">settings</mat-icon>Configurações
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon class="icon-spacer">help</mat-icon>Sobre
+          </mat-list-item>
+         </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+     <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>

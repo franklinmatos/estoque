@@ -1,0 +1,42 @@
+.example-icon {
+  padding: 0 14px;
+  margin-right: 3%;
+  margin-right: 2%;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.my-container {
+  width: 20%;
+  height: 300px;
+}
+.my-drawer-content {
+  display: flex;
+}
+.my-drawer {
+  padding: 30px;
+}
+
+.content {
+  align-items: center;
+  text-align: center;
+  min-height: 80vh; /* Altura mínima de 90px */
+  max-height: 100vh; /* Altura máxima de 100% da altura da viewport */
+  height: 100%; /* Fallback para navegadores que não suportam max-height 100vh */
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-spacer {
+  margin-right: 1%;
+}

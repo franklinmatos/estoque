@@ -1,0 +1,26 @@
+<div class="container">
+  <mat-spinner class="spinner" *ngIf="loader"></mat-spinner>
+<h5><u><i>Login Form using Angular material!!</i></u></h5>
+<form class="form">
+  <p>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>User Name</mat-label>
+    <input matInput placeholder="Informe seu login" name="usename"  formControlName="usernameFormControl">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Informe a senha" value="" name="password" type="password" formControlName="passwordFormControl">
+  </mat-form-field>
+</p>
+  <button mat-raised-button color="primary" (click)="submit()">Entrar</button>
+  <span *ngIf="show && !loader"> <button mat-button color="accent">Login success !!</button></span>
+</form>
+
+<div class="version-container">
+  <div class="version">
+    <span class="version-info">Versão atual: 0.0.1</span>
+  </div>
+</div>
+</div>
